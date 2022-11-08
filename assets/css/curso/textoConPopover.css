@@ -1,0 +1,18 @@
+.texto-popover {
+    font-size: large;
+    text-decoration: none;
+    color: #000;
+    margin: 0px;
+    padding: 5px 0px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.sujeto:hover {
+    background-color:lightblue;
+    color:darkblue
+}
+
+.predicado:hover {
+    background-color: gainsboro;
+}

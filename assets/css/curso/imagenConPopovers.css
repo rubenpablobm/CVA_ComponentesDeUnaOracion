@@ -1,0 +1,49 @@
+.img-cadena-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.boton-img {
+  position: absolute;
+  background: none;
+  border-radius: 42%;
+  border: 0;
+  width: 13.7%;
+  height: 60%;
+  bottom: 21.4%;
+}
+
+.boton-img:hover {
+  border: 5px solid orange;
+}
+
+#articulo {
+  left: .5%;
+  bottom: 19.7%;
+}
+
+#sustantivo {
+  left: 14.7%;
+  bottom: 19.7%;
+}
+
+#adjetivo {
+  left: 28.9%;
+}
+
+#pronombre {
+  left: 43%;
+}
+
+#verbo {
+  left: 57.3%;
+}
+
+#preposicion {
+  left: 71.4%;
+}
+
+#adverbio {
+  left: 85.6%;
+}
