@@ -29,6 +29,10 @@
     />
 
     <!-- page plugins css -->
+    <link 
+      rel="stylesheet" 
+      href="../../assets/css/curso/tablaQuiz.css"
+    >
 
     <!-- core css -->
     <link
@@ -115,699 +119,610 @@
             <!-- card QUIZ -->
             <div class="card">
               <div class="card-block">
+                <div class="column">
+                  
+                  <h3 class="card-title">
+                    Instrucciones
+                  </h3>
+                  <p>
+                    Selecciona la opción correcta. Puedes contestar este ejercicio
+                    las veces que consideres necesarias.
+                  </p>
 
-                <!-- TABLE START -->
-                <table>
-                  <thead>
-                    <th colspan="2">Imagen</th>
-                    <th>Género</th>
-                    <th>Número</th>
-                  </thead>
-                  <tr>
-                    <th>a)</th>
-                    <td>
-                      <img src="../../assets/images/course/introduccion/intro2/shutterstock_1708639741.jpeg" alt="Imagen del sol">
-                    </td>
-                    <td>
-                      <p>1.</p>
-                      <select id="select1" name="genero">
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="neutro">Neutro</option>
-                      </select>
-                    </td>
-                    <td>
-                      <p>2.</p>
-                      <select id="select2" name="numero">
-                        <option value="singular">Singular</option>
-                        <option value="plural">Plural</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>b)</th>
-                    <td>
-                      <img src="../../assets/images/course/introduccion/intro2/shutterstock_1708639741.jpeg" alt="Imagen del sol">
-                    </td>
-                    <td>
-                      <p>3.</p>
-                      <select id="select3" name="genero">
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="neutro">Neutro</option>
-                      </select>
-                    </td>
-                    <td>
-                      <p>4.</p>
-                      <select id="select4" name="numero">
-                        <option value="singular">Singular</option>
-                        <option value="plural">Plural</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>c)</th>
-                    <td>
-                      <img src="../../assets/images/course/introduccion/intro2/shutterstock_1708639741.jpeg" alt="Imagen del sol">
-                    </td>
-                    <td>
-                      <p>5.</p>
-                      <select id="select5" name="genero">
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="neutro">Neutro</option>
-                      </select>
-                    </td>
-                    <td>
-                      <p>6.</p>
-                      <select id="select6" name="numero">
-                        <option value="singular">Singular</option>
-                        <option value="plural">Plural</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>d)</th>
-                    <td>
-                      <img src="../../assets/images/course/introduccion/intro2/shutterstock_1708639741.jpeg" alt="Imagen del sol">
-                    </td>
-                    <td>
-                      <p>7.</p>
-                      <select id="select7" name="genero">
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="neutro">Neutro</option>
-                      </select>
-                    </td>
-                    <td>
-                      <p>8.</p>
-                      <select id="select8" name="numero">
-                        <option value="singular">Singular</option>
-                        <option value="plural">Plural</option>
-                      </select>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>e)</th>
-                    <td>
-                      <img src="../../assets/images/course/introduccion/intro2/shutterstock_1708639741.jpeg" alt="Imagen del sol">
-                    </td>
-                    <td>
-                      <p>9.</p>
-                      <select id="select9" name="genero">
-                        <option value="masculino">Masculino</option>
-                        <option value="femenino">Femenino</option>
-                        <option value="neutro">Neutro</option>
-                      </select>
-                    </td>
-                    <td>
-                      <p>10.</p>
-                      <select id="select10" name="numero">
-                        <option value="singular">Singular</option>
-                        <option value="plural">Plural</option>
-                      </select>
-                    </td>
-                  </tr>
-                </table>
-                <!-- TABLE END -->
-
-                <div class="row">
-                  <!-- Columna izquierda de preguntas START -->
-                  <div class="col-md-6">
-                    <!-- Pregunta 1 START -->
-                    <div class="question">
-                      <p class="question-text">1. Primer paso a la hora de plantear la búsqueda de información</p>
-                      <p
-                        class="alertWrong mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: red"
+                  <!-- PAR PREGUTAS 1-2 START -->
+                  <div class="column">
+                    <div class="center">
+                      <img 
+                        src='../../assets/images/course/introduccion/intro2/shutterstock_1708639741.jpeg' 
+                        class="col-lg-4 col-sm-6"
+                        style="
+                          border: 2px solid grey;
+                          border-radius: 1rem;
+                        "
+                        alt=""
                       >
-                        Incorrecto. Checa detenidamente y te darás cuenta de que las otras son pasos que siguen después de definir el tema.
-                      </p>
-                      <p
-                        class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: green"
-                      >
-                        ¡Excelente! Efectivamente el primer paso es definir lo que vas a buscar o en otras palabras el tema.
-                      </p>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton1"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Definir el tipo de información que se va a buscar</label
-                        >
-                      </div>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option correct"
-                          name="radiobutton1"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Definir el tema el cual quieres buscar.</label
-                        >
-                      </div>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton1"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A3"
-                          >Elegir un buscador de información.
-                        </label>
-                      </div>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton1"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A4"
-                          >Planear los tiempos que te tomará buscar la información.
-                        </label>
-                      </div>
+                      <h3>
+                        <b>a) Sol</b>
+                      </h3>
                     </div>
-                    <!-- Pregunta 1 END -->
-
-                    <!-- Pregunta 2 START -->
-                    <div class="question">
-                      <p class="question-text">2. ¿Cuál de las siguientes opciones es un operador booleano?</p>
-
-                      <p
-                        class="alertWrong mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: red"
-                      >
-                        Incorrecto. Checa de nuevo la lectura y verás que los operadores booleanos aunque puedes definir lo que hace con el resto de las opciones no son específicas al mismo.
-                      </p>
-                      <p
-                        class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: green"
-                      >
-                        ¡Excelente! Efectivamente los operadores booleanos delimitan los temas que te pueden aparecer por medio de AND, OR y NOT.
-                      </p>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          class="option"
-                          name="radiobutton2"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Son utilizados para buscar información para tu investigación.</label
+                    <div class="row justify-content-around flex-wrap">
+                      <!-- Pregunta 1 START -->
+                      <div class="question col-md-5">
+                        <p class="question-text">1. ¿Cuál es su género?</p>
+                        <p
+                          class="alertWrong mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: red"
                         >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option correct"
-                          name="radiobutton2"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Para delimitar el tipo de textos que aparecen a la hora de hacer una búsqueda de información. Los que se usan normalmente son AND, OR y NOT.</label
+                          Incorrecto.
+                        </p>
+                        <p
+                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: green"
                         >
+                          ¡Excelente!
+                        </p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option correct"
+                            name="radiobutton1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A1"
+                            >Masculino</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A2"
+                            >Femenino</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton1"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A3"
+                            >Neutro
+                          </label>
+                        </div>
                       </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton2"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A3"
-                          >Se utilizan para poder encontrar información correcta.</label
+                      <!-- Pregunta 1 END -->
+                      
+                      <!-- Pregunta 2 START -->
+                      <div class="question col-md-5">
+                        <p class="question-text">2. ¿Cuál es su número?</p>
+  
+                        <p
+                          class="alertWrong mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: red"
                         >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          class="option"
-                          name="radiobutton2"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A4"
-                          >Pueden utilizarse para poder encontrar artículos de interés.</label
+                          Incorrecto.
+                        </p>
+                        <p
+                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: green"
                         >
+                          ¡Excelente!
+                        </p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option correct"
+                            class="option"
+                            name="radiobutton2"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A1"
+                            >Singular</label
+                          >
+                        </div>
+  
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton2"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A2"
+                            >Plural</label
+                          >
+                        </div>
                       </div>
+                      <!-- Pregunta 2 END -->
                     </div>
-                    <!-- Pregunta 2 END -->
-
-                    <!-- Pregunta 3 START -->
-                    <div class="question">
-                      <p class="question-text">3. ¿Para qué sirven los operadores truncados?</p>
-
-                      <p
-                        class="alertWrong mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: red"
-                      >
-                        Incorrecto. Checa detenidamente y verás que de las opciones solo una señala específicamente a los operadores truncados como tal.
-                      </p>
-                      <p
-                        class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: green"
-                      >
-                        ¡Excelente! Efectivamente los operadores booleanos delimitan los temas que te pueden aparecer por medio de ? y *.
-                      </p>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option correct"
-                          class="option"
-                          name="radiobutton3"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Para delimitar los términos que puedas encontrar a la hora de hacer tu investigación con símbolos como ? y *.</label
-                        >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton3"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Son utilizados para buscar información para tu investigación.</label
-                        >
-                      </div>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton3"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Se utilizan para poder encontrar información correcta.</label
-                        >
-                      </div>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton3"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Pueden utilizarse para poder encontrar artículos de interés.</label
-                        >
-                      </div>
-                    </div>
-                    <!-- Pregunta 3 END -->
-
-                    <!-- Pregunta 4 START -->
-                    <div class="question">
-                      <p class="question-text">4. ¿Cómo eliges el tipo de información que necesitas para tu investigación?</p>
-                      <p
-                        class="alertWrong mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: red"
-                      >
-                        Incorrecto. Aunque tal vez el resto de las opciones podrían ser utilizadas ninguna de ellas especifica el tipo de información que se necesitaría dependiendo de qué naturaleza será tu investigación.
-                      </p>
-                      <p
-                        class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: green"
-                      >
-                        ¡Excelente! Efectivamente dependerá del tipo de información que requieras si se necesita información que ha sido revisada y verídica esta la académica o por el otro lado necesitas información más práctica o para una investigación personal puedes usar la web en general.
-                      </p>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          class="option"
-                          name="radiobutton4"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Depende si la información que necesito es para la escuela.</label
-                        >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option correct"
-                          name="radiobutton4"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Depende de si la información que necesito es académica o solamente es para una investigación personal en la cual pueda usar páginas web en general.</label
-                        >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input"
-                          name="radiobutton4"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Principalmente dependiendo de qué tan verídica es.</label
-                        >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input"
-                          name="radiobutton4"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Preguntándole a un amigo, profesor, mentor, etc.
-                        </label>
-                      </div>
-                    </div>
-                    <!-- Pregunta 4 END -->
-
-                    <!-- Pregunta 5 START -->
-                    <div class="question">
-                      <p clas="question-text">5. Los operadores lógicos delimita un tema:</p>
-                      <p
-                        class="alertWrong mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: red"
-                      >
-                        Incorrecto. Vuelve a checar a la lectura y verás que casi todos tienen como objetivo hacer más exacta tu búsqueda y que no tengas.
-                      </p>
-                      <p
-                        class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: green"
-                      >
-                        ¡Excelente! Efectivamente los operadores lógicos buscan delimitar y poder ser más específicos a la hora de investigar por información.
-                      </p>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option correct"
-                          class="option"
-                          name="radiobutton5"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Verdadero.</label
-                        >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton5"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Falso.</label
-                        >
-                      </div>
-                    </div>
-                    <!-- Pregunta 5 END -->
                   </div>
-                  <!-- Columna izquierda de preguntas END -->
-
-                  <!-- Columna derecha de preguntas START -->
-                  <div class="col-md-6">
-                    <!-- Pregunta 6 START -->
-                    <div class="question">
-                      <p class="question-text">6. ¿Es un navegador web Google?</p>
-
-                      <p
-                        class="alertWrong mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: red"
+                  <!-- PAR PREGUTAS 1-2 END -->
+                  <!-- PAR PREGUTAS 3-4 START -->
+                  <div class="column">
+                    <div class="center">
+                      <img 
+                        src='../../assets/images/course/introduccion/intro2/shutterstock_1708639741.jpeg' 
+                        class="col-lg-4 col-sm-6"
+                        style="
+                          border: 2px solid grey;
+                          border-radius: 1rem;
+                        "
+                        alt=""
                       >
-                        Incorrecto. Google no es un navegador web.
-                      </p>
-                      <p
-                        class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: green"
-                      >
-                        ¡Excelente! Google no es un navegador web.
-                      </p>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option correct"
-                          class="option"
-                          name="radiobutton7"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Verdadero</label
-                        >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option correct"
-                          name="radiobutton7"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Falso</label
-                        >
-                      </div>
+                      <h3>
+                        <b>b) Flores</b>
+                      </h3>
                     </div>
-                    <!-- Pregunta 6 END -->
-
-                    <!-- Pregunta 7 START -->
-                    <div class="question">
-                      <p class="question-text">7. El navegador web preinstalado con Windows 10 en adelante.</p>
-
-                      <p
-                        class="alertWrong mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: red"
-                      >
-                        Incorrecto. El navegador web que viene preinstalado con Windows 10 en adelante es Microsoft Edge.
-                      </p>
-                      <p
-                        class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: green"
-                      >
-                        ¡Excelente! El navegador web que viene preinstalado con Windows 10 en adelante es Microsoft Edge.
-                      </p>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton9"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Google Chrome</label
+                    <div class="row justify-content-around flex-wrap">
+                      <!-- Pregunta 3 START -->
+                      <div class="question col-md-5">
+                        <p class="question-text">3. ¿Cuál es su género?</p>
+                        <p
+                          class="alertWrong mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: red"
                         >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton9"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Safari</label
+                          Incorrecto.
+                        </p>
+                        <p
+                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: green"
                         >
+                          ¡Excelente!
+                        </p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton3"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A1"
+                            >Masculino</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option correct"
+                            name="radiobutton3"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A2"
+                            >Femenino</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton3"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A3"
+                            >Neutro
+                          </label>
+                        </div>
                       </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton9"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Microsoft Bing</label
+                      <!-- Pregunta 3 END -->
+                      
+                      <!-- Pregunta 4 START -->
+                      <div class="question col-md-5">
+                        <p class="question-text">4. ¿Cuál es su número?</p>
+  
+                        <p
+                          class="alertWrong mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: red"
                         >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option correct"
-                          name="radiobutton9"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A2"
-                          >Microsoft Edge</label
+                          Incorrecto.
+                        </p>
+                        <p
+                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: green"
                         >
+                          ¡Excelente!
+                        </p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            class="option"
+                            name="radiobutton4"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A1"
+                            >Singular</label
+                          >
+                        </div>
+  
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option correct"
+                            name="radiobutton4"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A2"
+                            >Plural</label
+                          >
+                        </div>
                       </div>
+                      <!-- Pregunta 4 END -->
                     </div>
-                    <!-- Pregunta 7 END -->
+                  </div>
+                  <!-- PAR PREGUTAS 3-4 END -->
 
-                    <!-- Pregunta 8 START -->
-                    <div class="question">
-                      <p class="question-text">8. Un navegador web es dónde uno puede visualizar páginas de internet.</p>
-
-                      <p
-                        class="alertWrong mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: red"
+                  <!-- PAR PREGUTAS 5-6 START -->
+                  <div class="column">
+                    <div class="center">
+                      <img 
+                        src='../../assets/images/course/introduccion/intro2/shutterstock_1708639741.jpeg' 
+                        class="col-lg-4 col-sm-6"
+                        style="
+                          border: 2px solid grey;
+                          border-radius: 1rem;
+                        "
+                        alt=""
                       >
-                        Incorrecto. Un navegador web es un visualizador de páginas de internet.
-                      </p>
-                      <p
-                        class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: green"
-                      >
-                        ¡Excelente! Un navegador web es un visualizador de páginas de internet.
-                      </p>
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option correct"
-                          name="radiobutton10"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Verdadero</label
-                        >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton10"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Falso</label
-                        >
-                      </div>
+                      <h3>
+                        <b>c) Frutas</b>
+                      </h3>
                     </div>
-                    <!-- Pregunta 8 END -->
-
-                    <!-- Pregunta 9 START -->
-                    <div class="question">
-                      <p class="question-text">9. ¿Es verídica la información en una página web si utiliza el protocolo de HTTPS (el candado cerrado)?</p>
-
-                      <p
-                        class="alertWrong mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: red"
-                      >
-                        Incorrecto. Ojo, no porque tenga dicho protocolo (HTTPS) en uso una página significa que su información sea verídica.
-                      </p>
-                      <p
-                        class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: green"
-                      >
-                        ¡Excelente! Ojo, no porque tenga dicho protocolo (HTTPS) en uso una página significa que su información sea verídica.
-                      </p>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton12"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Verdadero</label
+                    <div class="row justify-content-around flex-wrap">
+                      <!-- Pregunta 5 START -->
+                      <div class="question col-md-5">
+                        <p class="question-text">5. ¿Cuál es su género?</p>
+                        <p
+                          class="alertWrong mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: red"
                         >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option correct"
-                          name="radiobutton12"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Falso</label
+                          Incorrecto.
+                        </p>
+                        <p
+                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: green"
                         >
+                          ¡Excelente!
+                        </p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton5"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A1"
+                            >Masculino</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option correct"
+                            name="radiobutton5"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A2"
+                            >Femenino</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton5"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A3"
+                            >Neutro
+                          </label>
+                        </div>
                       </div>
+                      <!-- Pregunta 5 END -->
+                      
+                      <!-- Pregunta 6 START -->
+                      <div class="question col-md-5">
+                        <p class="question-text">6. ¿Cuál es su número?</p>
+  
+                        <p
+                          class="alertWrong mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: red"
+                        >
+                          Incorrecto.
+                        </p>
+                        <p
+                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: green"
+                        >
+                          ¡Excelente!
+                        </p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            class="option"
+                            name="radiobutton6"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A1"
+                            >Singular</label
+                          >
+                        </div>
+  
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option correct"
+                            name="radiobutton6"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A2"
+                            >Plural</label
+                          >
+                        </div>
+                      </div>
+                      <!-- Pregunta 6 END -->
                     </div>
-                    <!-- Pregunta 9 END -->
+                  </div>
+                  <!-- PAR PREGUTAS 5-6 END -->
 
-                    <!-- Pregunta 10 START -->
-                    <div class="question">
-                      <p class="question-text">10. Google cuenta con un navegador web y su motor de búsqueda.</p>
-
-                      <p
-                        class="alertWrong mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: red"
+                  <!-- PAR PREGUTAS 7-8 START -->
+                  <div class="column">
+                    <div class="center">
+                      <img 
+                        src='../../assets/images/course/introduccion/intro2/shutterstock_1708639741.jpeg' 
+                        class="col-lg-4 col-sm-6"
+                        style="
+                          border: 2px solid grey;
+                          border-radius: 1rem;
+                        "
+                        alt=""
                       >
-                        Incorrecto. Google sí cuenta con un navegador web y su motor de búsqueda.
-                      </p>
-                      <p
-                        class="alertCorrect mb-0 font-size-14 font-weight-bold"
-                        style="display: none; color: green"
-                      >
-                        ¡Excelente! Google sí cuenta con un navegador web y su motor de búsqueda.
-                      </p>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option correct"
-                          name="radiobutton42"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Verdadero</label
-                        >
-                      </div>
-
-                      <div class="custom-control custom-radio">
-                        <input
-                          type="radio"
-                          class="custom-control-input option"
-                          name="radiobutton42"
-                        />
-                        <label
-                          class="custom-control-label"
-                          for="U13_Q1_A1"
-                          >Falso</label
-                        >
-                      </div>
+                      <h3>
+                        <b>d) Perro</b>
+                      </h3>
                     </div>
-                    <!-- Pregunta 10 END -->
+                    <div class="row justify-content-around flex-wrap">
+                      <!-- Pregunta 7 START -->
+                      <div class="question col-md-5">
+                        <p class="question-text">7. ¿Cuál es su género?</p>
+                        <p
+                          class="alertWrong mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: red"
+                        >
+                          Incorrecto.
+                        </p>
+                        <p
+                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: green"
+                        >
+                          ¡Excelente!
+                        </p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option correct"
+                            name="radiobutton7"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A1"
+                            >Masculino</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton7"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A2"
+                            >Femenino</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton7"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A3"
+                            >Neutro
+                          </label>
+                        </div>
+                      </div>
+                      <!-- Pregunta 7 END -->
+                      
+                      <!-- Pregunta 8 START -->
+                      <div class="question col-md-5">
+                        <p class="question-text">8. ¿Cuál es su número?</p>
+  
+                        <p
+                          class="alertWrong mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: red"
+                        >
+                          Incorrecto.
+                        </p>
+                        <p
+                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: green"
+                        >
+                          ¡Excelente!
+                        </p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option correct"
+                            class="option"
+                            name="radiobutton8"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A1"
+                            >Singular</label
+                          >
+                        </div>
+  
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton8"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A2"
+                            >Plural</label
+                          >
+                        </div>
+                      </div>
+                      <!-- Pregunta 8 END -->
+                    </div>
+                  </div>
+                  <!-- PAR PREGUTAS 7-8 END -->
 
+                  <!-- PAR PREGUTAS 9-10 START -->
+                  <div class="column">
+                    <div class="center">
+                      <img 
+                        src='../../assets/images/course/introduccion/intro2/shutterstock_1708639741.jpeg' 
+                        class="col-lg-4 col-sm-6"
+                        style="
+                          border: 2px solid grey;
+                          border-radius: 1rem;
+                        "
+                        alt=""
+                      >
+                      <h3>
+                        <b>e) Conejo</b>
+                      </h3>
+                    </div>
+                    <div class="row justify-content-around flex-wrap">
+                      <!-- Pregunta 9 START -->
+                      <div class="question col-md-5">
+                        <p class="question-text">9. ¿Cuál es su género?</p>
+                        <p
+                          class="alertWrong mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: red"
+                        >
+                          Incorrecto.
+                        </p>
+                        <p
+                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: green"
+                        >
+                          ¡Excelente!
+                        </p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option correct"
+                            name="radiobutton9"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A1"
+                            >Masculino</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton9"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A2"
+                            >Femenino</label
+                          >
+                        </div>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton9"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A3"
+                            >Neutro
+                          </label>
+                        </div>
+                      </div>
+                      <!-- Pregunta 9 END -->
+                      
+                      <!-- Pregunta 10 START -->
+                      <div class="question col-md-5">
+                        <p class="question-text">10. ¿Cuál es su número?</p>
+  
+                        <p
+                          class="alertWrong mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: red"
+                        >
+                          Incorrecto.
+                        </p>
+                        <p
+                          class="alertCorrect mb-0 font-size-14 font-weight-bold"
+                          style="display: none; color: green"
+                        >
+                          ¡Excelente!
+                        </p>
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option correct"
+                            class="option"
+                            name="radiobutton10"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A1"
+                            >Singular</label
+                          >
+                        </div>
+  
+                        <div class="custom-control custom-radio">
+                          <input
+                            type="radio"
+                            class="custom-control-input option"
+                            name="radiobutton10"
+                          />
+                          <label
+                            class="custom-control-label"
+                            for="U13_Q1_A2"
+                            >Plural</label
+                          >
+                        </div>
+                      </div>
+                      <!-- Pregunta 10 END -->
+                    </div>
+                  </div>
+                  <!-- PAR PREGUTAS 9-10 END -->
+                </div>
                     <div>
                       <!-- DIV STICKY SCORECARD -->
                       <div class="card d-flex sticky-score p-2 mrg-top-10 w-100">
