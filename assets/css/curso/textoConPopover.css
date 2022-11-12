@@ -8,6 +8,19 @@
     cursor: pointer;
 }
 
+.underline-popover {
+    text-decoration: underline #a1522c;
+    color: #000;
+    margin: 0px;
+    padding: 5px 0px;
+    border-radius: 10%;
+    cursor: pointer;
+}
+
+.underline-popover:hover {
+    color: #a1522c;
+}
+
 .sujeto:hover {
     background-color:lightblue;
     color:darkblue
