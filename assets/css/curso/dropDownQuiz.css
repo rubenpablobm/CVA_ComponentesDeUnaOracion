@@ -9,6 +9,14 @@
   display: inline;
 }
 
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5%;
+}
+
 ol li {
   background-image: none;
   padding: 10px;
