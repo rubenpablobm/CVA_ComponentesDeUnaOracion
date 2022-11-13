@@ -51,6 +51,11 @@
 
 /* PARA PÁGINA MOD3-2*/
 
+.img-adjetivos-responsiva {
+  width: 60%;
+  margin: 0 auto;
+}
+
 .boton-adjetivos {
   position: absolute;
   background: none;
@@ -59,7 +64,7 @@
   border-radius: 4px;
   width: auto;
   height: auto;
-  font-size: 4vw;
+  font-size: 2vw;
   font-weight: bold;
 }
 
@@ -74,30 +79,30 @@
   height: 25%;
   width: 30%;
   left: 35%;
-  bottom: 50%;
+  bottom: 40%;
   cursor:default;
 }
 
 #adj-demostrativos {
-  left: 35%;
-  bottom: 80%;
+  left: 42%;
+  bottom: 75%;
   color: #004777;
 }
 
 #adj-calificativos {
-  left: 68.5%;
-  bottom: 58%;
+  left: 61%;
+  bottom: 45%;
   color: #00AFB5;
 }
 
 #adj-posesivos {
-  left: 5%;
-  bottom: 58%;
+  left: 44%;
+  bottom: 15%;
   color: #5B8C5A;
 }
 
 #adj-numerales {
-  left: 38%;
-  bottom: 33%;
+  left: 23%;
+  bottom: 45%;
   color: #820263;
 }
