@@ -1,10 +1,11 @@
-.img-cadena-container {
+.img-modal-container {
   position: relative;
   display: inline-block;
   text-align: center;
 }
 
-.boton-img {
+/* PARA PÁGINA INTRO7 */
+.boton-img-cadena {
   position: absolute;
   background: none;
   border-radius: 42%;
@@ -14,36 +15,89 @@
   bottom: 21.4%;
 }
 
-.boton-img:hover {
+.boton-img-cadena:hover {
   border: 5px solid orange;
 }
 
-#articulo {
+#cadena-articulo {
   left: .5%;
   bottom: 19.7%;
 }
 
-#sustantivo {
+#cadena-sustantivo {
   left: 14.7%;
   bottom: 19.7%;
 }
 
-#adjetivo {
+#cadena-adjetivo {
   left: 28.9%;
 }
 
-#pronombre {
+#cadena-pronombre {
   left: 43%;
 }
 
-#verbo {
+#cadena-verbo {
   left: 57.3%;
 }
 
-#preposicion {
+#cadena-preposicion {
   left: 71.4%;
 }
 
-#adverbio {
+#cadena-adverbio {
   left: 85.6%;
+}
+
+/* PARA PÁGINA MOD3-2*/
+
+.boton-adjetivos {
+  position: absolute;
+  background: none;
+  border: none;
+  border-bottom: 5px solid rgba(0, 0, 0, 0);
+  border-radius: 4px;
+  width: auto;
+  height: auto;
+  font-size: 4vw;
+  font-weight: bold;
+}
+
+.boton-adjetivos:hover {
+  border-bottom: 5px solid orange;
+}
+
+#adj-titulo {
+  border-radius: 50%;
+  border: none;
+  color: rgb(91, 90, 90);
+  height: 25%;
+  width: 30%;
+  left: 35%;
+  bottom: 50%;
+  cursor:default;
+}
+
+#adj-demostrativos {
+  left: 35%;
+  bottom: 80%;
+  color: #004777;
+}
+
+#adj-calificativos {
+  left: 68.5%;
+  bottom: 58%;
+  color: #00AFB5;
+}
+
+#adj-posesivos {
+  left: 5%;
+  bottom: 58%;
+  color: #5B8C5A;
+}
+
+#adj-numerales {
+  left: 38%;
+  bottom: 33%;
+  color: #820263;
 }
