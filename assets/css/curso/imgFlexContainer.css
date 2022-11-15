@@ -21,3 +21,10 @@
   padding: 0 10px;
   text-align: center;
 }
+
+.img-subtitulada .top-title {
+  background-color:rgba(140, 138, 134, 0.538);
+  padding: 0 10px;
+  margin: 0;
+  text-align: center;
+}
