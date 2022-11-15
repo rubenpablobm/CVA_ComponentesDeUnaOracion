@@ -9,8 +9,9 @@
 }
 
 .underline-popover {
-    text-decoration: underline #a1522c;
+    text-decoration: underline #a1522c 2px;
     color: #000;
+    font-weight: bold;
     margin: 0px;
     padding: 5px 0px;
     border-radius: 10%;
