@@ -15,7 +15,7 @@
 
     <!-- page plugins css -->
     <link rel="stylesheet" href="../../assets/css/curso/textoConModal.css" />
-    <link rel="stylesheet" href="../../assets/css/curso/dragAndDropQuiz.css">
+    <link rel="stylesheet" href="../../assets/css/curso/textoConPopover.css">
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -143,17 +143,233 @@
                             >
 
                             <!-- QUIZ START -->
-                            <div class="alert alert-danger col-11 col-sm-11 col-lg-6 mx-auto">
-                              <div></div>
-                              <h3 class="card-title">
-                                <i class="fa fa-question-circle fa-2x"></i> &nbsp
-                                Falta:
-                              </h3>
-                              <p>
-                                Ejercicio arrastra y suelta palabras correctas (sustantivos). <br>
-                                <b>Sugerencia:</b> Popovers correctos e incorrectos con confeti.
-                              </p>
+                            <p class="card-info mb-4"><i class="icon ti-mouse-alt"></i> Haz clic en las palabras bajo las imágenes para ver su función en las oraciones.</p>
+
+                            <!-- CARDS START -->
+                            <div class="row justify-content-center">
+                              <div class="card mx-5" style="width: 25rem">
+                                <img src="../../assets/images/course/introduccion/intro1/shutterstock_1722804640 min.jpeg" class="card-image-top" alt="..." />
+                                <div class="card-body flex-column">
+                                  <p class="card-text">
+                                    <a tabindex="1" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-correct
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="¡Correcto!"
+                                    > Carlos </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > toca </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > rápido </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > una </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > alegre </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-correct
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="¡Correcto!"
+                                    > melodía </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > con </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > el </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-correct
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="¡Correcto!"
+                                    > violín </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > nuevo</a>.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="card mx-5" style="width: 25rem">
+                                <img src="../../assets/images/course/introduccion/intro1/shutterstock_1372367636.jpeg" class="card-img-top" alt="..." />
+                                <div class="card-body">
+                                  <p class="card-text">
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-correct
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="¡Correcto!"
+                                    > María </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > lee </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > la </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > bella </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-correct
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="¡Correcto!"
+                                    > historia </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > sentada </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > en </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > su </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-correct
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="¡Correcto!"
+                                    > silla </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > y </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-correct
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="¡Correcto!"
+                                    > nosotros </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > escuchamos </a>
+                                    <a tabindex="2" 
+                                      class="texto-popover reveal" 
+                                      role="button" 
+                                      data-incorrect
+                                      data-toggle="popover" 
+                                      data-placement="bottom" 
+                                      data-trigger="focus" 
+                                      data-content="Incorrecto"
+                                    > atentamente</a>.
+                                  </p>
+                                </div>
+                              </div>
                             </div>
+                            <!-- CARDS END -->
                             <!-- QUIZ END -->
 
                           </div>
@@ -244,6 +460,23 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    <script src="../../assets/js/curso/dragAndDropQuiz.js"></script>
+    <script src="../../assets/js/curso/textoConPopover.js"></script>
+    <script>
+      const palabrasCorrectas = document.querySelectorAll('[data-correct]')
+      const palabrasIncorrectas = document.querySelectorAll('[data-incorrect]')
+
+      palabrasCorrectas.forEach(palabra => {
+        palabra.addEventListener('click', () => {
+          palabra.classList.add('correcto-color')
+          console.log(palabra)
+        })
+      });
+
+      palabrasIncorrectas.forEach(palabra => {
+        palabra.addEventListener('click', () => {
+          palabra.classList.add('incorrecto-color')
+        })
+      })
+    </script>
   </body>
 </html>
