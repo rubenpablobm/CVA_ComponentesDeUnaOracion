@@ -461,22 +461,6 @@
 
     <!-- Insert your dependencies here -->
     <script src="../../assets/js/curso/textoConPopover.js"></script>
-    <script>
-      const palabrasCorrectas = document.querySelectorAll('[data-correct]')
-      const palabrasIncorrectas = document.querySelectorAll('[data-incorrect]')
-
-      palabrasCorrectas.forEach(palabra => {
-        palabra.addEventListener('click', () => {
-          palabra.classList.add('correcto-color')
-          console.log(palabra)
-        })
-      });
-
-      palabrasIncorrectas.forEach(palabra => {
-        palabra.addEventListener('click', () => {
-          palabra.classList.add('incorrecto-color')
-        })
-      })
-    </script>
+    <script src="../../assets/js/curso/revealCorrectoIncorrecto.js"></script>
   </body>
 </html>
