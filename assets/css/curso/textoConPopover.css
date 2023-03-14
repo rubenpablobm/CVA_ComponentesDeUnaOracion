@@ -27,6 +27,15 @@
     color:darkblue
 }
 
-.predicado:hover {
+.reveal:hover {
     background-color: gainsboro;
+}
+
+.correcto-color {
+    background-color: rgba(34, 129, 34, 0.5);
+
+}
+
+.incorrecto-color {
+    background-color: rgba(255, 68, 0, 0.5);
 }
