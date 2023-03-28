@@ -132,7 +132,7 @@
                     <!-- CARDS START -->
                     <div class="row justify-content-center">
                       <div class="card mx-5" style="width: 25rem">
-                        <div class="card-body flex-column">
+                        <div class="card-body flex-column" id="ejercicio1">
                           <h4 class="card-title">Párrafo 1</h4>
                           <p class="card-text">
                             <a class="texto-popover reveal" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" tabindex="1"
@@ -298,7 +298,7 @@
                               data-correct="" data-content="¡Correcto!"
                             > pueden </a>
                             <a class="texto-popover reveal" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" tabindex="1"
-                              data-incorrect data-content="Incorrecto"
+                              data-correct data-content="Incorrecto"
                             > ir </a>
                             <a class="texto-popover reveal" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" tabindex="1"
                               data-incorrect data-content="Incorrecto"
@@ -339,15 +339,15 @@
                           </p>
                           <hr>
                           <div class="font-weight-bold text-center" style="color: #000">
-                            Quedan <span id="contador-1" class="text-success font-weight-bold">8</span> verbos en este párrafo.
+                            Quedan <span class="text-success font-weight-bold contador">9</span> verbos en este párrafo.
                           </div>
                           <div class="font-weight-bold text-center" style="color: #000">
-                            Puntuación: <span id="puntos-p1" class="text-dark font-weight-bold">0</span>
+                            Puntuación: <span class="text-dark font-weight-bold score">0</span>
                           </div>
                         </div>
                       </div>
                       <div class="card mx-5" style="width: 25rem">
-                        <div class="card-body">
+                        <div class="card-body" id="ejercicio2">
                           <h4 class="card-title">Poema</h4>
                           <p class="card-text">
                             <a class="texto-popover reveal" role="button" data-toggle="popover" data-placement="bottom" data-trigger="focus" tabindex="1"
@@ -455,10 +455,10 @@
                           </p>
                           <hr>
                           <div class="font-weight-bold text-center" style="color: #000">
-                            Quedan <span id="contador-2" class="text-success font-weight-bold">2</span> verbos en infinitivo.
+                            Quedan <span class="text-success font-weight-bold contador">2</span> verbos en infinitivo.
                           </div>
                           <div class="font-weight-bold text-center" style="color: #000">
-                            Puntuación: <span id="puntos-p2" class="text-dark font-weight-bold">0</span>
+                            Puntuación: <span class="text-dark font-weight-bold score">0</span>
                           </div>
                         </div>
                       </div>
@@ -557,6 +557,67 @@
     <!-- Insert your dependencies here -->
     <script src="../../assets/js/curso/textoConPopover.js"></script>
     <script src="../../assets/js/curso/revealCorrectoIncorrecto.js"></script>
+    <script>
+      const ejercicio1 = document.querySelector('#ejercicio1');
+      let contador1 = parseInt(ejercicio1.querySelector('.contador').textContent);
+      const contador1Text = ejercicio1.querySelector('.contador');
+      let score1 = 0;
+      const score1Text = ejercicio1.querySelector('.score');
+      const correctas1 = ejercicio1.querySelectorAll('[data-correct]')
+      const incorrectas1 = ejercicio1.querySelectorAll('[data-incorrect]')
+      console.log(correctas1)
+
+      const ejercicio2 = document.querySelector('#ejercicio2');
+      let contador2 = parseInt(ejercicio2.querySelector('.contador').textContent);
+      const contador2Text = ejercicio2.querySelector('.contador');
+      let score2 = 0;
+      const score2Text = ejercicio2.querySelector('.score');
+      const correctas2 = ejercicio2.querySelectorAll('[data-correct]')
+      const incorrectas2 = ejercicio2.querySelectorAll('[data-incorrect]')
+
+      correctas1.forEach(palabra => {
+        palabra.addEventListener('click', function eventHandler() {
+          event.target.removeEventListener('click', eventHandler);
+          contador1--;
+          contador1Text.innerText = contador1;
+          score1 += 11.15;
+          if (score1 > 100) { 
+            score1 = 100 
+          }
+          score1Text.innerText = score1.toFixed(2);
+        })
+      })
+
+      incorrectas1.forEach(palabra => {
+        palabra.addEventListener('click', function eventHandler() {
+          event.target.removeEventListener('click', eventHandler);
+          score1 -= 3;
+          score1Text.innerText = score1.toFixed(2);
+        })
+      })
+
+      correctas2.forEach(palabra => {
+        palabra.addEventListener('click', function eventHandler() {
+          event.target.removeEventListener('click', eventHandler);
+          contador2--;
+          contador2Text.innerText = contador2;
+          score2 += 50;
+          if (score2 > 100) { 
+            score2 = 100 
+          }
+          score2Text.innerText = score2;
+        })
+      })
+
+      incorrectas2.forEach(palabra => {
+        palabra.addEventListener('click', function eventHandler() {
+          event.target.removeEventListener('click', eventHandler);
+          score2 -= 5;
+          score2Text.innerText = score2;
+        })
+      })
+
+    </script>
 
   </body>
 </html>
