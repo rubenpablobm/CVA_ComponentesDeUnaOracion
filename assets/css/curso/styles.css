@@ -98,7 +98,7 @@
   transform: translateX(-50%);
 }
 .app-tp-inner-wrapper{
-  background: #CCC;
+  background: #EEE;
   color: #000;
   border-radius: 10px;
   overflow: hidden;
@@ -116,6 +116,7 @@
   align-items: center;
   padding: 5px 10px;  
   background-color: #A1522C;
+  color:#fff;
   font-size: medium;
   font-weight: 600;
 }
