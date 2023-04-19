@@ -257,20 +257,69 @@
                                 <div class="tab-content mx-5 p-5" style="background-color: #F6F7FB; border-radius: 20px;padding-bottom: 1rem;">
                                   <!-- PANEL 1 START -->
                                   <div role="tabpanel" class="tab-pane fade in active" id="pills-info-1">
-                                    <ul class="no-bullets">
-                                      <li>
-                                        <div class="hover-tooltip">Hola
-                                          <span class="tooltiptext">
-                                            <span class="font-weight-bold">Título</span>
-                                            <br>
-                                            <ul>
-                                              <li>prueba</li>
-                                              <li>otra</li>
-                                            </ul>
-                                          </span>
+                                    <ul>
+                                      <li class="tooltip-text">
+                                        <div class="tp-wrapper" tabindex="0">
+                                          <span class="tp-label-text">Movimiento material o figurado</span>
+                                          <div class="app-tp" id="tp-container" role="tooltip">
+                                            <div class="app-tp-inner-wrapper">
+                                              <div class="app-tp-header">
+                                                <span class="app-tp-prono">Ejemplos</span>
+                                              </div>
+                                              <div class="app-tp-text">
+                                                <ul>
+                                                  <li>Voy <b>a</b> París</li>
+                                                  <li>Miro <b>al</b> cielo</li>
+                                                  <li>Libro dedicado <b>a</b> mis padres</li>
+                                                </ul>
+                                              </div>
+                                            </div>
+                                          </div>
                                         </div>
                                       </li>
+                                      <li class="tooltip-text">
+                                        Proximidad
+                                      </li>
+                                      <li class="tooltip-text">
+                                        Lugar y tiempo
+                                      </li>
+                                      <li class="tooltip-text">
+                                        Modo o manera
+                                      </li>
+                                      <li class="tooltip-text">
+                                        Finalidad u objetivo de una acción
+                                      </li>
+                                      <li class="tooltip-text">
+                                        El intervalo entre dos puntos temporales o espaciales
+                                      </li>
+                                      <li class="tooltip-text">
+                                        Instrumento con que se ejecuta algo
+                                      </li>
+                                      <li class="tooltip-text">
+                                        Sirve para formar frases y locuciones adverbiales
+                                      </li>
                                     </ul>
+
+                                    <!-- <div class="app-quote"> -->
+                                      <!-- <div class="app-quote-text"> -->
+                                        I know quite certainly that I myself have no special talent; curiosity, 
+                                        <div class="tp-wrapper" tabindex="0">
+                                          <span class="tp-label-text">obsession</span>
+                                          <div class="app-tp" id="tp-container" role="tooltip">
+                                            <div class="app-tp-inner-wrapper">
+                                              <div class="app-tp-header">
+                                                <span class="app-tp-prono">Ejemplos</span>
+                                              </div>
+                                              <div class="app-tp-text">
+                                                <b>Obsession</b>, a persistent disturbing preoccupation with an often unreasonable idea or feeling.
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        and dogged endurance, combined with self-criticism have brought me to my ideas.
+                                        <!-- <span class="app-quote-author">Albert Einstein</span> -->
+                                      <!-- </div> -->
+                                    <!-- </div> -->
                                   </div>
                                   <!-- PANEL 1 END -->
                                   <!-- PANEL 2 START -->
@@ -486,6 +535,26 @@
 
     <!-- Insert your dependencies here -->
     <script src="../../assets/js/curso/textoConPopover.js"></script>
+    <script>
+      function initTooltip(tooltipContainer       ) {
+        const trigger = tooltipContainer.classList.contains('tp-wrapper') ? tooltipContainer : tooltipContainer.querySelector('.tp-wrapper');
+        const tooltip = tooltipContainer.querySelector('.app-tp');
+
+        // hide the tooltip on escape key press
+        trigger.addEventListener('keydown', (event) => {
+          if (event.key === 'Escape') {
+            trigger.blur();
+          }
+        });
+      
+    
+      }
+      // initiate tooltips
+      const tooltips = document.querySelectorAll('.tp-wrapper');
+      tooltips.forEach((tooltip) => {
+        initTooltip(tooltip);
+      });
+    </script>
 
   </body>
 </html>
