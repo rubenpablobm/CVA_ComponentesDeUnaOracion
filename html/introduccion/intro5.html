@@ -14,8 +14,7 @@
     <link rel="stylesheet" href="../../assets/vendors/perfect-scrollbar/css/perfect-scrollbar.min.css" />
 
     <!-- page plugins css -->
-    <link rel="stylesheet" href="../../assets/css/curso/textoConModal.css" />
-    <link rel="stylesheet" href="../../assets/css/curso/dragAndDropQuiz.css" />
+    <link rel="stylesheet" href="../../assets/css/curso/textoConPopover.css">
 
     <!-- core css -->
     <link href="../../assets/css/ei-icon.css" rel="stylesheet" />
@@ -83,23 +82,255 @@
                         <div class="col-md ml-auto">
                           <div class="card-block">
                             <p>
-                              Arrastra hacia el recuadro verde, con el puntero del 
-                              ratón, las palabras que consideres correctas. 
-                              Automáticamente recibirás retroalimentación de tu respuesta.
+                              Encuentra los <strong>adjetivos</strong> en las siguientes oraciones.
+                              Al hacer clic sobre una palabra sabrás si es <span class="correcto-color">correcta</span>
+                              o <span class="incorrecto-color">incorrecta</span>.                              
                             </p>
 
-                            <!-- QUIZ START -->
-                            <div class="alert alert-danger col-11 col-sm-11 col-lg-6 mx-auto">
-                              <div></div>
-                              <h3 class="card-title">
-                                <i class="fa fa-question-circle fa-2x"></i> &nbsp Falta:
-                              </h3>
+                            <div class="card-block">
                               <p>
-                                Ejercicio arrastra y suelta palabras correctas (adjetivos). <br />
-                                <b>Sugerencia:</b> Popovers correctos e incorrectos con confeti.
+                                Encuentra los <strong>sustantivos</strong> en las siguientes oraciones.
+                                Al hacer clic sobre una palabra sabrás si es <span class="correcto-color">correcta</span>
+                                o <span class="incorrecto-color">incorrecta</span>.                              
                               </p>
+  
+                              <!-- QUIZ START -->
+                              <p class="card-info mb-4"><i class="icon ti-mouse-alt"></i> Haz clic en las palabras bajo las imágenes para encontrar los sustantivos de cada oración.</p>
+  
+                              <!-- CARDS START -->
+                              <div class="row justify-content-center">
+                                <div class="card mx-5" style="width: 25rem">
+                                  <img src="../../assets/images/course/introduccion/intro1/shutterstock_1722804640 min.jpeg" class="card-image-top" alt="..." />
+                                  <div class="card-body flex-column">
+                                    <p class="card-text">
+                                      <a tabindex="1" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > Carlos </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > toca </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > rápido </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > una </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-correct
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="¡Correcto!"
+                                      > alegre </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > melodía </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > con </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > el </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > violín </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-correct
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="¡Correcto!"
+                                      > nuevo</a>.
+                                    </p>
+                                    <div style="color: lightslategray">
+                                      Esta oración tiene 2 adjetivos.
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="card mx-5" style="width: 25rem">
+                                  <img src="../../assets/images/course/introduccion/intro1/shutterstock_1372367636.jpeg" class="card-img-top" alt="..." />
+                                  <div class="card-body">
+                                    <p class="card-text">
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > María </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > lee </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > la </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-correct
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="¡Correcto!"
+                                      > bella </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > historia </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-correct
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="¡Correcto!"
+                                      > sentada </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > en </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > su </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > silla </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > y </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > nosotros </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > escuchamos </a>
+                                      <a tabindex="2" 
+                                        class="texto-popover reveal" 
+                                        role="button" 
+                                        data-incorrect
+                                        data-toggle="popover" 
+                                        data-placement="bottom" 
+                                        data-trigger="focus" 
+                                        data-content="Incorrecto"
+                                      > atentamente</a>.
+                                    </p>
+                                    <div style="color: lightslategray">
+                                      Esta oración tiene 2 adjetivos.
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- CARDS END -->
+                              <!-- QUIZ END -->
+  
                             </div>
-                            <!-- QUIZ END -->
                           </div>
                         </div>
                       </div>
@@ -188,6 +419,7 @@
     <!-- endbuild -->
 
     <!-- Insert your dependencies here -->
-    <script src="../../assets/js/curso/dragAndDropQuiz.js"></script>
+    <script src="../../assets/js/curso/textoConPopover.js"></script>
+    <script src="../../assets/js/curso/revealCorrectoIncorrecto.js"></script>
   </body>
 </html>
